@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" verbose="5" name="Test">
+  <parameter name="browser" value="FF"/>
+	<parameter name="url" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000"/>
+	<parameter name="adminusername" value="Thomas@123"/>
+	<parameter name="adminpassword" value="Thomas@111"/>
+	<parameter name="ssn" value="667990098"/>
+    <classes>
+    <!-- <class name="com.mmp.admin.tests.AdminLoginPageTest"/> -->
+      <class name="com.mmp.admin.tests.SearchPatientTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

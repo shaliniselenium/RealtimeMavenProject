@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<test thread-count="5" verbose="5" name="Test">
+<parameter name="browser" value="CH"/>
+<parameter name="url" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/"/>
+<parameter name="adminusername" value="Thomas@123"/>
+<parameter name="adminpassword" value="Thomas@111"/>
+<parameter name="ssn" value="667990098"/>
+<parameter name="reason"    value="abcd fever"/> 
+<parameter name="subject"  value="abcd fever messages"/>
+<parameter name="expTime" value="12PM"/>
+<parameter name="doctorName" value="Dr.Annabeth"/>
+<parameter name="doj" value="April/20/2018"/>
+<parameter name="prescriptionname" value="RogerPres"/>
+	<parameter name="presdescription" value="Prescription for Roger"/>
+<parameter name="symptoms" value="Fever Symptoms-Test data"/>
+<parameter name="Reportname" value="Patient Report"/>
+<parameter name="Reportfile" value="C:\Users\Shalini\Desktop\report.txt"/>
+<parameter name="ReportDescription" value="Test---Detailed Report for patient "/>
+<!-- <parameter name="label1" value="Contact Reason"/>
+<parameter name="label2" value="Subject"/>
+<parameter name="label3" value="Send"/>
+ -->
+    <classes>
+      <class name="com.mmp.admin.tests.AdminModule"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

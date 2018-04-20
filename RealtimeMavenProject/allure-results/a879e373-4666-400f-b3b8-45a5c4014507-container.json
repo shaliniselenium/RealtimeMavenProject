@@ -1,0 +1,1 @@
+{"uuid":"a879e373-4666-400f-b3b8-45a5c4014507","name":"com.mmp.patient.tests.LoginPageTest.tearDown","description":"","start":1522514375467,"stop":1522514376188,"children":["5fe084fa-8d93-453c-bce4-a47289f713b4"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1522514375467,"stop":1522514376188}]}

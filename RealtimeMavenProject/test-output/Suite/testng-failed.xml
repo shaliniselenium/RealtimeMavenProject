@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="reportName" value="Roger&#039;s Report"/>
+  <parameter name="expTime" value="11AM"/>
+  <parameter name="url" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/"/>
+  <parameter name="browserType" value="CH"/>
+  <parameter name="ssn" value="667990098"/>
+  <parameter name="adminUsername" value="Thomas@123"/>
+  <parameter name="symptoms" value="Typhoid fever"/>
+  <parameter name="doctorName" value="Dr.Smith"/>
+  <parameter name="reportDesc" value="Roger is good to go office"/>
+  <parameter name="prescriptionname" value="RogerPres"/>
+  <parameter name="presdescription" value="Prescription for Roger"/>
+  <parameter name="adminUrl" value="http://96.84.175.78/MMP-Release2-Admin-Build.2.1.000/login.php"/>
+  <parameter name="doj" value="April/28/2018"/>
+  <parameter name="adminPassword" value="Thomas@111"/>
+  <parameter name="patFName" value="Roger"/>
+  <test name="AdminTests(failed)">
+    <parameter name="reportName" value="Roger&#039;s Report"/>
+    <parameter name="expTime" value="11AM"/>
+    <parameter name="url" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/"/>
+    <parameter name="browserType" value="CH"/>
+    <parameter name="ssn" value="667990098"/>
+    <parameter name="adminUsername" value="Thomas@123"/>
+    <parameter name="symptoms" value="Typhoid fever"/>
+    <parameter name="doctorName" value="Dr.Smith"/>
+    <parameter name="reportDesc" value="Roger is good to go office"/>
+    <parameter name="prescriptionname" value="RogerPres"/>
+    <parameter name="presdescription" value="Prescription for Roger"/>
+    <parameter name="adminUrl" value="http://96.84.175.78/MMP-Release2-Admin-Build.2.1.000/login.php"/>
+    <parameter name="doj" value="April/28/2018"/>
+    <parameter name="adminPassword" value="Thomas@111"/>
+    <parameter name="patFName" value="Roger"/>
+    <classes>
+      <class name="com.mmp.admin.tests.AdminModule">
+        <methods>
+          <include name="AdminLoginTest"/>
+          <include name="addPresdescriptionTest"/>
+          <include name="createpatientvisitTest"/>
+          <include name="createFeeMethodTest"/>
+          <include name="searchPatientSSNTest"/>
+          <include name="reportstest"/>
+        </methods>
+      </class> <!-- com.mmp.admin.tests.AdminModule -->
+    </classes>
+  </test> <!-- AdminTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
