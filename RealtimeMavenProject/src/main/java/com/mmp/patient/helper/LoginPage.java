@@ -14,15 +14,18 @@ public class LoginPage  {
 		this.driver=driver;
 		}
 
-	public void login(String username, String password) {
+	public void patientlogin() {
 		
 		driver.findElement(By.linkText("Patient Login")).click();
+	}
+	
+	public void login(String username, String password) {
 		
 		WebElement webElement1 = driver.findElement(By.linkText("Login"));
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click();", webElement1);
-		
-		//driver.findElement(By.linkText("Login")).click();
+	
+			//driver.findElement(By.linkText("Login")).click();
 		driver.findElement(By.id("username")).clear();
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).clear();
@@ -34,7 +37,14 @@ public class LoginPage  {
 		System.out.println(username);
 		System.out.println("Login Successful");
 	}
-	
+	public void registerpatient() {
+	WebElement webelement2=driver.findElement(By.linkText("Register"));
+	JavascriptExecutor executor2= (JavascriptExecutor)driver;
+	executor2.executeScript("arguments[0].click();",webelement2);
+		
+		
+		
+	}
 	
 	public String validateUserName()
 	{

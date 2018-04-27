@@ -9,18 +9,31 @@ import com.mmp.util.TestBaseClass;
 
 public class LoginPageTest extends TestBaseClass{
 	LoginPage lp;
+	
+
+	@Test(priority=1)
+	public void patientloginTest()
+	{
+		
+		lp=new LoginPage(driver);
+		lp.patientlogin();
+			
+}
+	
+	
+	
 	@Parameters({"username","password"})
-	@Test
+	@Test(priority=2)
 	public void LoginTest(String username, String password)
 	{
 		
 		lp=new LoginPage(driver);
-			lp.login(username, password);
+		lp.login(username, password);
 }
 	
 	
 	@Parameters({"username"})
-	@Test
+	@Test(priority=3)
 	public void validateUserNameTest()
 	{
 		String user=lp.validateUserName();
